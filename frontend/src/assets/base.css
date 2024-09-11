@@ -1,0 +1,78 @@
+/* src/assets/base.css */
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&family=Archivo+Black&display=swap');
+
+/* Root CSS Variables */
+:root {
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  --font-heading-alternative: 'Archivo Black', sans-serif;
+
+  --color-primary: #4A90E2;
+  --color-secondary: #45846D;
+  --color-accent: #F5A623;
+  --color-background: #F9F9F9;
+  --color-auth-background: #E3E2DD;
+
+  --text-color: #333;
+  /* Dark text color for readability */
+  --border-color: #ddd;
+  /* Light border color */
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+h1-alternative,
+h2-alternative,
+h3-alternative,
+h4-alternative,
+h5-alternative,
+h6-alternative {
+  font-family: var(--font-heading-alternative);
+  margin: 0;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.button-secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+.highlight {
+  color: var(--color-accent);
+}
+
+/* Additional Styles as Needed */

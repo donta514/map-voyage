@@ -6,14 +6,15 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <header>
   
-    <img alt="Vue logo" class="logo" src="@/assets/where-will-you-go-blue.jpg" width="125" height="125" />
+    <img alt="Journey logo" class="logo" src="@/assets/journey-blue-light.jpg" width="200" height="200" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/signup">Sign up</RouterLink>
+        <RouterLink to="/login">Login</RouterLink>
       </nav>
     </div>
   </header>

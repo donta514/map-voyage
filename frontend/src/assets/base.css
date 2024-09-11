@@ -13,19 +13,21 @@
   --color-secondary: #45846D;
   --color-accent: #F5A623;
   --color-background: #F9F9F9;
-  --color-auth-background: #E3E2DD;
+  --color-text: #333;
 
-  --text-color: #333;
-  /* Dark text color for readability */
-  --border-color: #ddd;
-  /* Light border color */
+  --dark-background: #1E1E1E;
+  /* Dark mode background */
+  --dark-text: #EAEAEA;
+  /* Light text for dark mode */
+  --dark-border: #555;
+  /* Dark mode border color */
 }
 
 /* Global Styles */
 body {
   font-family: var(--font-body);
   background-color: var(--color-background);
-  color: var(--text-color);
+  color: var(--color-text);
   margin: 0;
   padding: 0;
 }
@@ -72,6 +74,26 @@ h6-alternative {
 }
 
 .highlight {
+  color: var(--color-accent);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: var(--dark-background);
+  color: var(--dark-text);
+}
+
+.dark-mode .button-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.dark-mode .button-secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.dark-mode .highlight {
   color: var(--color-accent);
 }
 
